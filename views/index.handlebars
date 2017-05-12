@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container text-center">
 	<img src="/assets/img/burger.png" alt="burger" width="200">
 	<h1>Eat-Da-Burger</h1>
 
@@ -8,10 +8,11 @@
 		  {{#each burgers}}
 		  	{{#unless this.devoured}}
 		  		{{this.id}}. {{this.burger_name}} 
-		        <form action="/{{this.id}}?_method=PUT" method="POST">
-		          <input type="hidden" name="devour" value="false">
-		          <button type="submit">Devour</button>
-		        </form>
+			        <form action="/{{this.id}}?_method=PUT" method="POST" class="devour-button">
+			          <input type="hidden" name="devour" value="false">
+			          <button type="submit" class="btn btn-sm btn-default devour-button">Devour</button>
+			        </form>
+			        </br>
 		    {{/unless}}
 		  {{/each}}
 	</div>
@@ -23,15 +24,14 @@
 		        </br>
 		    {{/if}}
 		  {{/each}}
-		</div>
+	</div>
 </div>
 
 	<h2>Add a Burger!</h2>
 	<form class="create-update-form" action="/" method="POST">
-
 	  <div class="form-group">
-	    <input type="text" id="burger" name="name">
+	    <input type="text" id="burger" name="name" size="40">	  
 	  </div>
-	  <button type="submit">Submit</button>
+	  <button type="submit" class="btn btn-warning">Submit</button>
 	</form>
 </div>
