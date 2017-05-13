@@ -18,8 +18,6 @@ var orm = {
 		queryString += ") ";
 	    queryString += "VALUES (?) ";
 
-	    console.log(queryString);
-
 	    connection.query(queryString, vals, function(error, result) {
 	    	if (error) {
 	    		throw error;
@@ -32,8 +30,6 @@ var orm = {
 		var queryString = "UPDATE " + table;
 		queryString += " SET devoured=TRUE WHERE "
 		queryString += condition;
-
-		console.log(queryString);
 
 		connection.query(queryString, function(error, result) {
 			if(error) {
