@@ -1,7 +1,7 @@
 # Eat-da-Burger
 
 ## Overview
-    A burger logger application created with MySQL, Node, Express, Handlebars and an ORM. The app follows the MVC design pattern using Node and MySQL to query and route the data, and handlebars to generate the HTML
+    A burger logger application created with MySQL, Node, Express, Handlebars and an ORM. The app follows the MVC design pattern using Node and MySQL to query and route the data, and handlebars to generate the HTML.
 
 ## How It Works
 - Users submit names of a burgers they would like to eat, and the burger is added to the "To Be Eaten" column -- waiting to be devoured.
